@@ -1,0 +1,54 @@
+{
+  "split": {
+    "counts": {
+      "train": 2,
+      "val": 2,
+      "test": 2
+    },
+    "group_overlap_train_val": 2,
+    "group_overlap_train_test": 2,
+    "group_overlap_val_test": 2,
+    "path_overlap_train_val": 0,
+    "path_overlap_train_test": 0,
+    "path_overlap_val_test": 0
+  },
+  "train_batch": {
+    "image_shape": [
+      8,
+      3,
+      256,
+      256
+    ],
+    "mask_shape": [
+      8,
+      1,
+      256,
+      256
+    ],
+    "image_dtype": "torch.float32",
+    "mask_dtype": "torch.float32",
+    "image_finite": true,
+    "mask_binary": true,
+    "mask_positive_fraction": 0.06966972351074219
+  },
+  "forward_backward": {
+    "logits_shape": [
+      8,
+      1,
+      256,
+      256
+    ],
+    "loss": 0.7516270875930786,
+    "loss_finite": true,
+    "grad_norm": 0.49251165986061096,
+    "grad_finite": true
+  },
+  "tiny_real_data_overfit": {
+    "n_images": 8,
+    "epochs": 60,
+    "dice": 0.9497331380844116,
+    "miou": 0.9076309204101562,
+    "loss": 0.3871147334575653,
+    "epoch": 60
+  }
+}

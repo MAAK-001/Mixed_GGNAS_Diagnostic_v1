@@ -1,0 +1,38 @@
+{
+  "dataset": "BUSI",
+  "data_root": "/kaggle/input/datasets/maak01/e-nas-datasets/Datasets",
+  "output_root": "diagnostic_runs",
+  "image_size": [
+    256,
+    256
+  ],
+  "batch_size": 8,
+  "num_workers": 0,
+  "base_channels": 16,
+  "seed": 42,
+  "calibration_architectures": 24,
+  "calibration_epochs": 30,
+  "proxy_images": 32,
+  "proxy_size": [
+    64,
+    64
+  ],
+  "proxy_repeats": 3,
+  "top_k_scale_ablation": 5,
+  "scale_ablation_epochs": 50,
+  "baseline_epochs": 100,
+  "learning_rate": 0.001,
+  "weight_decay": 5e-05,
+  "use_amp": true,
+  "include_busi_normal": false,
+  "train_augment": true,
+  "device": "cuda",
+  "split_report": {
+    "reused_manifest": "diagnostic_runs/BUSI/BUSI/manifests/busi_split.csv",
+    "split_counts": {
+      "train": 453,
+      "val": 98,
+      "test": 96
+    }
+  }
+}
